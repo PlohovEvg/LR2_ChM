@@ -530,8 +530,8 @@ namespace WinForm {
 				}
 				else
 				{
-					fi[i] = (1 / h)*((0.3 - x[i] - s) + sin(0.3*M_PI)*(x[i] + s - 0.3));
-					d[i] = (1 / h)*(0.3*(0.3 - x[i] - s) + 0.09*(x[i] + s - 0.3));
+					fi[i] = (1 / h)*((0.3 - x[i] + s) + sin(0.3*M_PI)*(x[i] + s - 0.3));
+					d[i] = (1 / h)*(0.3*(0.3 - x[i] + s) + 0.09*(x[i] + s - 0.3));
 				}
 			}
 		}
@@ -711,8 +711,8 @@ private: System::Void button2_Click(System::Object^  sender, System::EventArgs^ 
 			}
 			else
 			{
-				fi[i] = (1 / h)*(f1((0.3 + x[i] - s) / 2.0)*(0.3 - x[i] - s) + f2((x[i] + s + 0.3) / 2.0)*(x[i] + s - 0.3));
-				d[i] = (1 / h)*(q1((0.3 + x[i] - s) / 2.0)*(0.3 - x[i] - s) + q2((0.3 + x[i] - s) / 2.0)*(x[i] + s - 0.3));
+				fi[i] = (1 / h)*(f1((0.3 + x[i] - s) / 2.0)*(0.3 - x[i] + s) + f2((x[i] + s + 0.3) / 2.0)*(x[i] + s - 0.3));
+				d[i] = (1 / h)*(q1((0.3 + x[i] - s) / 2.0)*(0.3 - x[i] + s) + q2((0.3 + x[i] + s) / 2.0)*(x[i] + s - 0.3));
 			}
 		}
 	}
@@ -800,8 +800,8 @@ private: System::Void button2_Click(System::Object^  sender, System::EventArgs^ 
 			}
 			else
 			{
-				fi[i] = (1 / h)*(f1((0.3 + x2[i] - s) / 2.0)*(0.3 - x2[i] - s) + f2((x2[i] + s + 0.3) / 2.0)*(x2[i] + s - 0.3));
-				d[i] = (1 / h)*(q1((0.3 + x2[i] - s) / 2.0)*(0.3 - x2[i] - s) + q2((0.3 + x2[i] - s) / 2.0)*(x2[i] + s - 0.3));
+				fi[i] = (1 / h)*(f1((0.3 + x2[i] - s) / 2.0)*(0.3 - x2[i] + s) + f2((x2[i] + s + 0.3) / 2.0)*(x2[i] + s - 0.3));
+				d[i] = (1 / h)*(q1((0.3 + x2[i] - s) / 2.0)*(0.3 - x2[i] + s) + q2((0.3 + x2[i] + s) / 2.0)*(x2[i] + s - 0.3));
 			}
 		}
 	}
